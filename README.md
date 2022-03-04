@@ -3,7 +3,13 @@ Subject & StateSubject for common usage
 
 ## Installation
 ```
-npm install --save-dev ts-subject
+npm install --save ts-subject
+```
+
+or 
+
+```
+yarn add ts-subject
 ```
 
 ## Examples
