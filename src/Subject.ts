@@ -48,4 +48,18 @@ export class Subject<T>
             this._subscriptions[id](t);
         }
     }
+
+
+    public wait ( ): Promise<T>
+    {
+        return new Promise<T>( ( resolve ) =>
+        {
+            this.subscribe(resolve, ( val ) =>
+            {
+                this.unsubscribe(resolve);
+
+                resolve(val);
+            });
+        });
+    }
 }

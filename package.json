@@ -1,16 +1,21 @@
 {
   "name": "ts-subject",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Subject & StateSubject for common use",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
-  "repository": "github:indece-official/ts-subject",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/indece-official/ts-subject.git"
+  },
   "scripts": {
     "build": "tsc",
-    "prepare" : "npm run build"
+    "prepare": "npm run build"
   },
-  "files": ["lib/**/*"],
-  "author": "indece UG (haftungsbeschränkt)",
+  "files": [
+    "lib/**/*"
+  ],
+  "author": "indece Systems GmbH",
   "license": "MIT",
   "devDependencies": {
     "typescript": "^4.9.5"
